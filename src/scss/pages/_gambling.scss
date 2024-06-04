@@ -1,0 +1,46 @@
+.support{
+    .contact{
+     margin-bottom: 3rem;
+    }
+    &__info-title{
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 80%;
+        color: #25262e;
+        margin-bottom: 5rem;
+    }
+    &__info-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        p{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: #727688;   
+        }
+    }
+    &__info-content{
+        width: 53.1rem;
+    }
+    &__info-img{
+        margin-top: 7rem;
+        img{
+            border-radius: 0.6rem;
+            width: 58.6rem;
+            height: 33.6rem;
+        }
+    }
+ }
+
+.support__info{
+    margin-bottom: 10.6rem;
+    .container{
+        margin-top: 6.6rem;
+        display: flex;
+        gap: 5rem;
+    }
+}

@@ -1,0 +1,101 @@
+.footer{
+    background: #161925;
+    padding: 6.3rem 0 4rem;
+    &__top{
+        display: flex;
+        margin-bottom: 4.9rem;
+    }
+    &__logo{
+        margin-right: 13.6rem;
+        img{
+            width: 22.9rem;
+            height: 2.7rem;
+        }
+        p{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 167%;
+            letter-spacing: 0.02em;
+            color: #777b8d; 
+        }
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2.5rem;
+        border-bottom: 0.2rem solid rgba(114, 115, 131, 0.2);
+        margin-bottom: 3rem;
+        a{
+            color: #fff;
+        }
+    }
+    &__socials{
+        display: flex;
+        gap: 2.3rem;
+    }
+    &__nav-blocks{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        border-bottom: 0.1rem solid rgba(114, 115, 131, 0.2);
+        margin-bottom: 3rem;
+    }
+    &__nav-block{
+        width: 20.3rem;
+    }
+    &__nav-name{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: #fff;
+        margin-bottom: 1.8rem;
+    }
+    &__link{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 213%;
+        letter-spacing: 0.01em;
+        color: #7c848f;
+    }
+    &__bottom{
+        .container{
+            display: flex;
+            gap: 2.8rem;
+        }
+        padding: 6rem 0rem;
+        background: linear-gradient(180deg, rgba(114, 115, 131, 0.2) 0%, rgba(114, 115, 131, 0.2) 100%);
+    }
+    &__left{
+        width: 37.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        p{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 133%;
+            letter-spacing: 0.02em;
+            color: #7c848f; 
+        }
+    }
+    &__right{
+        width: 86.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.9rem;
+        p{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 133%;
+            letter-spacing: 0.02em;
+            color: #7c848f; 
+        }
+    }
+}

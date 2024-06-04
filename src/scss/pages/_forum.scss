@@ -1,0 +1,255 @@
+.forum{
+    margin-bottom: 10rem;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 3.6rem;
+        line-height: 67%;
+        color: #25262e;
+        margin-bottom: 5.7rem;
+    }
+    &__share{
+        position: absolute;
+        top: 3.1rem;
+        right: 3.3rem;
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        .forum__item{
+            position: relative;
+            display: flex;
+            padding: 3.7rem;
+            gap: 6.2rem;
+            border: 0.1rem solid #dbdde4;
+            border-radius: 0.8rem;
+        }
+    }
+    &__item-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item-name{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #2550e3;
+        margin-bottom: 0.8rem;
+    }
+    &__item-status{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 162%;
+        letter-spacing: 0.02em;
+        color: #252836;
+    }
+    &__item-img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1.9rem;
+        img{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+    }
+    &__item-date{
+        padding-top: 0.9rem;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 138%;
+        letter-spacing: 0.02em;
+        color: #c3c6d7;
+        margin-bottom: 2.8rem;
+    }
+    &__item-text{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 127%;
+        letter-spacing: 0.01em;
+        color: #727688; 
+    }
+    &__pagination{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 8rem;
+    }
+    &__pagination-inner{
+        display: flex;
+        gap: 0.5rem;
+    }
+    &__pagination-prev{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        padding: 1.2rem 3.2rem 1rem;
+        background: #f3f3f4;
+        border-radius: 0.6rem;
+    }
+    &__pagination-next{
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        padding: 1.2rem 3.2rem 1rem;
+        background: #f3f3f4;
+        border-radius: 0.6rem;
+    }
+    &__pagination-item{
+        border-radius: 0.6rem;
+        padding: 1.2rem 1.6rem 0.9rem;
+        transition: all 0.3s;
+        color: #000;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #252836;
+        &.active{
+            background: #2550e3;
+            color: #fff;
+        }
+    }
+    &__creater{
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+    }
+    &__creater-avatar{
+        img{
+          width: 10rem;
+          height: 10rem;  
+        }
+    }
+    &__creater-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    &__creater-text{
+        border: 1px solid #2550e3;
+        border-radius: 0.8rem;
+        width: 99rem;
+        padding: 3.1rem;
+    }
+    &__creater-btn{
+        padding: 1.2rem 2rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #fff;
+        border-radius: 0.6rem;
+        background: #2550e3;
+        width: 36.7rem;
+    }
+    .questions{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 5rem;
+        .forum__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1.4rem;
+            border-bottom: 0.1rem solid #ebebec;
+        }
+        .forum__item-qestion{
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 120%;
+            letter-spacing: 0.01em;
+            color: #2c407b;
+            margin-bottom: 0.7rem;
+            margin-top: -1rem;
+        }
+        .forum__item-info{
+            display: flex;
+            flex-direction: row;
+            gap: 1.7rem;
+            align-items: center;
+        }
+        .forum__item-sent{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 138%;
+            letter-spacing: 0.02em;
+            color: #777b8d;
+            span:nth-child(1){
+                font-family: $font-family;
+                font-weight: 700;
+                font-size: 1.3rem;
+                line-height: 138%;
+                letter-spacing: 0.02em;
+                color: #777b8d;
+            }
+        }
+        .forum__item-answer{
+            display: flex;
+            gap: 4rem;
+            span{
+                &:nth-child(1){
+                    width: 11rem;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 120%;
+                    letter-spacing: 0.01em;
+                    color: #34a853;
+                }
+                &:nth-child(2){
+                    width: 3rem;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 120%;
+                    letter-spacing: 0.01em;
+                    color: #34a853;
+                }
+                &:nth-child(3){
+                    width: 11rem;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 120%;
+                    letter-spacing: 0.01em;
+                    color: #2550e3;
+                }
+            }
+        }
+        .forum__item-img{
+            width: 3.7rem;
+            height: 3.7rem;
+            img{
+                width: 3.7rem;
+                height: 3.7rem;
+            }
+        }
+    }
+    .pagination-top{
+        margin-bottom: 4rem;
+    }
+}
