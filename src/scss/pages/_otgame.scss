@@ -1,5 +1,8 @@
 .game{
     margin-bottom: 13rem;
+    @media (max-width: 962px){
+        margin-bottom: 3rem;
+    }
     &__text{
         font-family: $font-family;
         font-weight: 400;
@@ -8,11 +11,18 @@
         letter-spacing: 0.01em;
         color: #727688;
         margin-bottom: 7.6rem;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
     }
     &__inner{
         display: flex;
         flex-wrap: wrap;
         gap: 2.9rem;
+         @media (max-width: 962px){
+            gap: 1rem;
+        }
     }
     &__item{
         display: flex;
@@ -28,9 +38,20 @@
         line-height: 120%;
         letter-spacing: 0.01em;
         color: #3a3b4a;
+         @media (max-width: 962px){
+            padding: 1.9rem 2rem;
+            font-size: 1.2rem;
+            gap: 1.9rem;
+        }
         svg{
             min-width: 4.9rem;
             min-height: 4.9rem;
+            @media (max-width: 962px){
+            min-width: 3rem;
+            min-height: 3rem;
+            max-width: 3rem;
+            max-height: 3rem;
+            }
         }
     }
 }

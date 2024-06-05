@@ -1,9 +1,17 @@
 .footer{
     background: #161925;
     padding: 6.3rem 0 4rem;
+    @media (max-width: 962px){
+        padding-bottom: 0;
+    }
     &__top{
         display: flex;
         margin-bottom: 4.9rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 2.3rem;
+            margin-bottom: 3rem;
+        }
     }
     &__logo{
         margin-right: 13.6rem;
@@ -26,8 +34,16 @@
         padding-bottom: 2.5rem;
         border-bottom: 0.2rem solid rgba(114, 115, 131, 0.2);
         margin-bottom: 3rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 2.1rem;
+            width: 24rem;
+        }
         a{
             color: #fff;
+            @media (max-width: 962px){
+                font-size: 1.2rem;
+            }
         }
     }
     &__socials{
@@ -41,9 +57,19 @@
         padding-bottom: 2rem;
         border-bottom: 0.1rem solid rgba(114, 115, 131, 0.2);
         margin-bottom: 3rem;
+        @media (max-width: 962px){
+            border: none;
+            margin-bottom: -1rem;
+        }
     }
     &__nav-block{
         width: 20.3rem;
+        @media (max-width: 962px){
+            padding-bottom: 2.2rem;
+            border-bottom: 0.1rem solid  rgba(114, 115, 131, 0.2);
+            margin-bottom: 2.5rem;
+            width: 24rem;
+        }
     }
     &__nav-name{
         font-family: $font-family;
@@ -53,6 +79,10 @@
         letter-spacing: 0.01em;
         color: #fff;
         margin-bottom: 1.8rem;
+        @media (max-width: 962px){
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
     }
     &__link{
         font-family: $font-family;
@@ -61,27 +91,53 @@
         line-height: 213%;
         letter-spacing: 0.01em;
         color: #7c848f;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+        }
     }
     &__bottom{
         .container{
+            overflow: hidden;
+            position: relative;
             display: flex;
             gap: 2.8rem;
+            @media (max-width: 962px){
+                flex-direction: column;
+                padding: 4.5rem 2rem 5rem;
+            }
         }
         padding: 6rem 0rem;
         background: linear-gradient(180deg, rgba(114, 115, 131, 0.2) 0%, rgba(114, 115, 131, 0.2) 100%);
+        @media (max-width: 962px){
+            padding: 0;
+        }
     }
     &__left{
         width: 37.7rem;
         display: flex;
         flex-direction: column;
         gap: 5rem;
+        @media (max-width: 962px){
+            width: 100%;
+        }
         p{
             font-family: $font-family;
             font-weight: 400;
             font-size: 1.2rem;
             line-height: 133%;
             letter-spacing: 0.02em;
-            color: #7c848f; 
+            color: #7c848f;
+            &:nth-child(2){
+                position: absolute;
+                left: 2rem;
+                bottom: -1rem;
+                font-size: 1.2rem;
+                max-width: 18rem;
+            }
+             @media (max-width: 962px){
+                padding-bottom: 1.8rem;
+                border-bottom: 0.1rem solid rgba(114, 115, 131, 0.2);
+            }
         }
     }
     &__right{
@@ -89,6 +145,11 @@
         display: flex;
         flex-direction: column;
         gap: 1.9rem;
+        @media (max-width: 962px){
+            width: 100%;
+            padding-bottom: 1.8rem;
+            border-bottom: 0.1rem solid rgba(114, 115, 131, 0.2);
+        }
         p{
             font-family: $font-family;
             font-weight: 400;

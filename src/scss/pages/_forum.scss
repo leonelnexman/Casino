@@ -11,6 +11,14 @@
         line-height: 67%;
         color: #25262e;
         margin-bottom: 5.7rem;
+        @media (max-width: 962px){
+            font-family: $second-family;
+            font-weight: 600;
+            font-size: 2.4rem;
+            line-height: 100%;
+            color: #25262e;
+            margin-bottom: 2.3rem;
+        }
     }
     &__share{
         position: absolute;
@@ -29,12 +37,20 @@
             gap: 6.2rem;
             border: 0.1rem solid #dbdde4;
             border-radius: 0.8rem;
+            @media (max-width: 962px){
+                flex-direction: column;
+                padding: 1.9rem;
+                gap: 0;
+            }
         }
     }
     &__item-info{
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: 962px){
+           flex-direction: row;
+        }
     }
     &__item-name{
         font-family: $font-family;
@@ -44,6 +60,10 @@
         letter-spacing: 0.01em;
         color: #2550e3;
         margin-bottom: 0.8rem;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+            margin-top: -1.5rem;
+         }
     }
     &__item-status{
         font-family: $font-family;
@@ -52,16 +72,31 @@
         line-height: 162%;
         letter-spacing: 0.02em;
         color: #252836;
+        @media (max-width: 962px){
+            margin-left: -10.5rem;
+            margin-bottom: -1rem;
+            font-size: 1rem;
+         }
     }
     &__item-img{
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
         margin-bottom: 1.9rem;
+        margin-right: 1rem;
+        @media (max-width: 962px){
+            width: 4rem;
+            height: 4rem;
+            margin-bottom: 1.4rem;
+        }
         img{
             width: 10rem;
             height: 10rem;
             border-radius: 50%;
+            @media (max-width: 962px){
+                width: 4rem;
+                height: 4rem;
+            }
         }
     }
     &__item-date{
@@ -73,6 +108,15 @@
         letter-spacing: 0.02em;
         color: #c3c6d7;
         margin-bottom: 2.8rem;
+        @media (max-width: 962px){
+            margin-bottom: 1.1rem;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 100%;
+            letter-spacing: 0.02em;
+            color: #c3c6d7;
+        }
     }
     &__item-text{
         font-family: $font-family;
@@ -80,13 +124,19 @@
         font-size: 1.5rem;
         line-height: 127%;
         letter-spacing: 0.01em;
-        color: #727688; 
+        color: #727688;
+        @media (max-width: 962px){
+            font-size: 1.1rem;
+        }
     }
     &__pagination{
         display: flex;
         align-items: center;
         gap: 1rem;
         margin-bottom: 8rem;
+        @media (max-width: 962px){
+            margin-bottom: 5rem;
+        }
     }
     &__pagination-inner{
         display: flex;
@@ -102,6 +152,10 @@
         padding: 1.2rem 3.2rem 1rem;
         background: #f3f3f4;
         border-radius: 0.6rem;
+        @media (max-width: 962px){
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
     }
     &__pagination-next{
         font-weight: 500;
@@ -112,6 +166,10 @@
         padding: 1.2rem 3.2rem 1rem;
         background: #f3f3f4;
         border-radius: 0.6rem;
+        @media (max-width: 962px){
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
     }
     &__pagination-item{
         border-radius: 0.6rem;
@@ -124,6 +182,10 @@
         line-height: 140%;
         letter-spacing: 0.01em;
         color: #252836;
+        @media (max-width: 962px){
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
         &.active{
             background: #2550e3;
             color: #fff;
@@ -133,11 +195,18 @@
         display: flex;
         align-items: center;
         gap: 7rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__creater-avatar{
         img{
           width: 10rem;
-          height: 10rem;  
+          height: 10rem; 
+          @media (max-width: 962px){
+            width: 5rem;
+            height: 5rem;
+        }
         }
     }
     &__creater-content{
@@ -150,6 +219,13 @@
         border-radius: 0.8rem;
         width: 99rem;
         padding: 3.1rem;
+        @media (max-width: 962px){
+            padding: 1.6rem;
+            font-size: 1.2rem;
+            width: 100%;
+            margin-top: -5rem;
+            height: 10rem;
+        }
     }
     &__creater-btn{
         padding: 1.2rem 2rem;
@@ -162,18 +238,31 @@
         border-radius: 0.6rem;
         background: #2550e3;
         width: 36.7rem;
+        @media (max-width: 962px){
+            padding: 1rem;
+            font-size: 1.2rem;
+            width: 100%;
+        }
     }
     .questions{
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
         margin-bottom: 5rem;
+        @media (max-width: 962px){
+           gap: 3rem;
+        }
         .forum__item{
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding-bottom: 1.4rem;
             border-bottom: 0.1rem solid #ebebec;
+            @media (max-width: 962px){
+                flex-direction: column;
+                width: 100%;
+            }
         }
         .forum__item-qestion{
             font-family: $font-family;
@@ -184,12 +273,22 @@
             color: #2c407b;
             margin-bottom: 0.7rem;
             margin-top: -1rem;
+            @media (max-width: 962px){
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
         }
         .forum__item-info{
             display: flex;
             flex-direction: row;
             gap: 1.7rem;
             align-items: center;
+            @media (max-width: 962px){
+                padding-top: 3.9rem;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
         }
         .forum__item-sent{
             font-family: $font-family;
@@ -205,11 +304,18 @@
                 line-height: 138%;
                 letter-spacing: 0.02em;
                 color: #777b8d;
+                @media (max-width: 962px){
+                    font-size: 1.2rem;
+                }
             }
         }
         .forum__item-answer{
             display: flex;
             gap: 4rem;
+            @media (max-width: 962px){
+                gap: 0;
+                justify-content: space-between;
+            }
             span{
                 &:nth-child(1){
                     width: 11rem;
@@ -219,6 +325,10 @@
                     line-height: 120%;
                     letter-spacing: 0.01em;
                     color: #34a853;
+                    @media (max-width: 962px){
+                        width: 8rem;
+                        font-size: 1.1rem;
+                    }
                 }
                 &:nth-child(2){
                     width: 3rem;
@@ -228,6 +338,10 @@
                     line-height: 120%;
                     letter-spacing: 0.01em;
                     color: #34a853;
+                    @media (max-width: 962px){
+                        width: 6rem;
+                        font-size: 1.1rem;
+                    }
                 }
                 &:nth-child(3){
                     width: 11rem;
@@ -237,15 +351,27 @@
                     line-height: 120%;
                     letter-spacing: 0.01em;
                     color: #2550e3;
+                    @media (max-width: 962px){
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
         .forum__item-img{
             width: 3.7rem;
             height: 3.7rem;
+            @media (max-width: 962px){
+                width: 1.8rem;
+                height: 1.8rem;
+                margin: 0;
+            }
             img{
                 width: 3.7rem;
                 height: 3.7rem;
+                @media (max-width: 962px){
+                    width: 1.8rem;
+                    height: 1.8rem;
+                }
             }
         }
     }

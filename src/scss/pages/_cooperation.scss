@@ -1,0 +1,124 @@
+.cooperation{
+    &__text{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #727688;
+        width: 67rem;
+        margin-bottom: 4.4rem;
+        @media (max-width: 962px){
+            width: 100%;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        margin-bottom: 8.1rem;
+        @media (max-width: 962px){
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__item{
+        padding: 3.5rem 4.5rem 2.7rem;
+        border: 1px solid #d6d7de;
+        border-radius: 0.8rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        @media (max-width: 962px){
+            padding: 2rem 3rem;
+            font-size: 1.4rem;
+        }
+    }
+    &__principles-title{
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 80%;
+        color: #25262e;
+        margin-bottom: 3.4rem;
+        @media (max-width: 962px){
+            font-family: $second-family;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 100%;
+            color: #25262e;
+        }
+    }
+    &__principles-text{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #727688; 
+        max-width: 73.6rem;
+        margin-bottom: 4.5rem;
+        @media (max-width: 962px){
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 125%;
+            letter-spacing: 0.02em;
+            color: #727688;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 6rem;
+        li{
+            display: flex;
+            align-items: center;
+            gap: 2.3rem;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: #727688;
+            @media (max-width: 962px){
+                font-size: 1.2rem;
+            }
+        }
+        span{
+            display: block;
+            border-radius: 0.1rem;
+            width: 0.4rem;
+            height: 0.4rem;
+            min-width: 0.4rem;
+            min-height: 0.4rem;
+            max-width: 0.4rem;
+            max-height: 0.4rem;
+            background: #2550e3;
+        }
+    }
+}
+
+.coop-contact{
+    .container{
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 962px){
+            margin: 0;
+            margin-bottom: 6.8rem;
+
+        }
+    }
+    iframe{
+        width: 100%;
+        height: 20.8rem;
+        border-radius: 0.8rem;
+    }
+}
