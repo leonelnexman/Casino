@@ -127,16 +127,16 @@
             line-height: 133%;
             letter-spacing: 0.02em;
             color: #7c848f;
-            &:nth-child(2){
-                position: absolute;
-                left: 2rem;
-                bottom: -1rem;
-                font-size: 1.2rem;
-                max-width: 18rem;
-            }
              @media (max-width: 962px){
                 padding-bottom: 1.8rem;
                 border-bottom: 0.1rem solid rgba(114, 115, 131, 0.2);
+                &:nth-child(2){
+                    position: absolute;
+                    left: 2rem;
+                    bottom: -1rem;
+                    font-size: 1.2rem;
+                    max-width: 18rem;
+                }
             }
         }
     }
