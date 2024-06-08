@@ -1,0 +1,249 @@
+.contacts{
+    margin-bottom: 9rem;
+    @media (max-width: 962px){
+        margin-bottom: 1.5rem;
+    }
+    .container{
+        background: rgba(239, 240, 244, 0.5);
+        margin-bottom: 3.8rem;
+        padding: 5.3rem 4.2rem 4rem;
+        border-radius: 0.8rem;
+        @media (max-width: 962px){
+            padding: 3.2rem 2rem 1.9rem;
+            width: 30rem;
+        }
+    }
+    &__title{
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 3.6rem;
+        line-height: 67%;
+        color: #25262e;
+        display: flex;
+        gap: 2.4rem;
+        margin-bottom: 5.2rem;
+        @media (max-width: 962px){
+            font-size: 2.4rem;
+            margin-bottom: 2.9rem;
+        }
+        svg{
+          width: 1.5rem;
+          height: 2rem;  
+        }
+    }
+    &__wrapper{
+        display: flex;
+        gap: 15rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 1.7rem;
+        }
+    }
+    &__info-item{
+        display: flex;
+        gap: 6.2rem;
+        @media (max-width: 962px){
+            gap: 1rem;
+        }
+        span{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 214%;
+            letter-spacing: 0.01em;
+            color: #767987;
+            display: block;
+            width: 15rem;
+            white-space: nowrap;
+            @media (max-width: 962px){
+                font-size: 1.2rem;
+                width: 11.9rem;
+            }
+        }
+        div{
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 200%;
+            letter-spacing: 0.01em;
+            color: #252836;  
+            white-space: nowrap;
+            @media (max-width: 962px){
+                font-size: 1.2rem;
+            }
+        }
+        a{
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 200%;
+            letter-spacing: 0.01em;
+            color: #252836; 
+            white-space: nowrap;
+            @media (max-width: 962px){
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        &:nth-child(2){
+            .contacts__info-item{
+                margin-bottom: 1.5rem;
+                flex-direction: column;
+                gap: 0;
+                span{
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+    &__address.container{
+        padding: 0;
+        background: transparent;
+        border: 1px solid #c5cfdd;
+        padding-left: 4.2rem;
+        @media (max-width: 962px){
+            padding: 0;
+        }
+    }
+    &__address-wrapper{
+        display: flex;
+        gap: 6.6rem;
+        @media (max-width: 962px){
+            flex-direction: column-reverse;
+            gap: 2.6rem;
+        }
+        .contacts__info{
+            @media (max-width: 962px){
+                padding: 0rem 1.9rem;
+            }
+        }
+        .contacts__info-item{
+            margin-bottom: 1rem;
+            @media (max-width: 962px){
+                gap: 0.3rem;
+                flex-direction: column;
+            }
+        }
+        .contacts__info-item span{
+            width: 10rem;
+            @media (max-width: 962px){
+                line-height: 100%;
+            }
+        }
+    }
+    &__address-title{
+        display: flex;
+        align-items: center;
+        gap: 1.9rem;
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 2.1rem;
+        line-height: 114%;
+        padding-top: 3rem;
+        color: #25262e;
+        margin-bottom: 3.1rem;
+        @media (max-width: 962px){
+            padding-top: 0;
+            font-size: 1.6rem;
+            margin-bottom: 1.9rem;
+        }
+        svg{
+          width: 1.8rem;
+          height: 2.3rem;  
+        }
+    }
+    iframe{
+        border-radius: 0.8rem;
+        width: 57.5rem;
+        height: 20.8rem; 
+        @media (max-width: 962px){
+            width: 100%;
+        }
+    }
+}
+
+.contacts-information{
+    max-width: 77rem;
+    &__title{
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 80%;
+        color: #25262e;
+        margin-bottom: 5rem;
+        @media (max-width: 962px){
+            font-size: 1.8rem;
+            margin-bottom: 1.9rem;
+        }
+    }
+    &__text{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #727688;
+        margin-bottom: 4.5rem;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+            margin-bottom: 1.9rem;
+        }
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            gap: 0.5rem;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 200%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+        }
+        span{
+            display: block;
+            border-radius: 0.1rem;
+            width: 0.4rem;
+            height: 0.4rem;
+            background: #2550e3;  
+        }
+    }
+}
+
+.nav-sect{
+    margin-bottom: 3rem;
+    .container{
+        border-radius: 0.4rem;
+        background: #f5f6fb;
+        padding: 1rem;
+    }
+    &__link{
+        border-radius: 0.4rem;
+        padding: 0.7rem 1.5rem 0.3rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 167%;
+        letter-spacing: 0.02em;
+        color: #000;
+        transition: all 0.3s;
+        &.active{
+            background: #2550e3;
+            color: #fff;
+        }
+    }
+}

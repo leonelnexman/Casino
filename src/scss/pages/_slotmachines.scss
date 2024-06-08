@@ -1,0 +1,51 @@
+.slotmachines{
+    &__wrapper{
+        width: 77.3rem;
+        display: flex;
+        gap: 1.8rem;
+        flex-wrap: wrap;
+    }
+    &__item{
+        background: #252836;
+        border-radius: 0.8rem;
+        width: 24.1rem;
+        img{
+            border-radius: 0.8rem;
+            width: 24rem;
+            height: 20rem;
+        }
+    }
+    &__content{
+        padding: 2.8rem 2.9rem;
+    }
+    &__name{
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 2.1rem;
+        line-height: 114%;
+        letter-spacing: 0.01em;
+        color: #fff; 
+        height: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    &__status{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 107%;
+        letter-spacing: 0.01em;
+        color: #727383;
+        margin-bottom: 1.5rem;
+    }
+    &__link{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 107%;
+        letter-spacing: 0.01em;
+        color: #fff ;
+        padding: 1.8rem 2.5rem 1.4rem;
+        background: #2550e3;
+        border-radius: 0.8rem;
+    }
+}

@@ -1,0 +1,273 @@
+.bonuses{
+    width: 74rem;
+    margin-bottom: 7.7rem;
+    @media (max-width: 962px){
+        margin-bottom: 3rem;
+     }
+    @media (max-width: 962px){
+        width: 100%;
+    }
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+    &__item{
+        width: 100%;
+        border: 0.1rem solid #dedede;
+        border-radius: 0.8rem;
+        padding: 2rem;
+        @media (max-width: 962px){
+            padding: 1.5rem;
+        } 
+    }
+    &__item-top{
+        position: relative;
+        display: flex;
+        gap: 2.1rem;
+        @media (max-width: 962px){
+            gap: 1.2rem;
+        } 
+        img{
+            border-radius: 0.6rem;
+            width: 17rem;
+            height: 12.5rem;
+            margin-bottom: 2rem;
+            @media (max-width: 962px){
+                border-radius: 0.8rem;
+                width: 10rem;
+                height: 7.4rem;
+            }   
+        }
+    }
+    
+    &__item-link{
+        border-radius: 0.6rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        padding: 1.3rem 4.1rem 0.8rem;
+        background: #f3f3f4;
+        @media (max-width: 962px){
+            position: absolute;
+            bottom: 14rem;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+        } 
+    }
+    &__item-content-top{
+        display: flex;
+        gap: 2.3rem;
+        align-items: center;
+        margin-bottom: 1.9rem;
+        @media (max-width: 962px){
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0.7rem;
+        } 
+    }
+    &__item-status{
+        border-radius: 0.6rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 107%;
+        letter-spacing: 0.01em;
+        color: #fff;
+        padding: 1.4rem 1.7rem 1.2rem;
+        background: #294fd3;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+            padding: 0.9rem 2rem 0.5rem;
+        } 
+    }
+    &__item-prem{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        @media (max-width: 962px){
+            font-size: 1.1rem;
+        } 
+        svg{
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+    }
+    &__item-content-main{
+        @media (max-width: 962px){
+            margin-left: -11rem;
+            margin-bottom: 20rem;
+        } 
+    }
+    &__item-content-name{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.9rem;
+        line-height: 111%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        margin-bottom: 4rem;
+        @media (max-width: 962px){
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+        } 
+    }
+    &__item-content-inner{
+        display: flex;
+        gap: 8.2rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 2.3rem;
+        } 
+    }
+    &__item-content-item{
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        width: 10rem;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 133%;
+        letter-spacing: 0.01em;
+        color: #3a3b4a;
+        @media (max-width: 962px){
+            gap: 5.2rem;
+            flex-direction: row;
+            white-space: nowrap;
+            font-size: 1.2rem;
+            color: #2c407b;
+        } 
+        span{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 107%;
+            letter-spacing: 0.01em;
+            color: #777b8d;
+            @media (max-width: 962px){
+                font-size: 1.2rem;
+                display: block;
+                min-width: 9rem;
+            }  
+        }
+    }
+    &__item-content-col{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+    &__item-copy{
+        padding: 1.5rem;
+        position: absolute;
+        border-radius: 0.6rem;
+        width: 19.8rem;
+        height: 11rem;
+        background: #eaab32;
+        right: 0rem;
+        bottom: 5.7rem;
+        @media (max-width: 962px){
+            padding: 1rem;
+           bottom: 0;
+           left: 0;
+           width: 100%;
+           height: 8.6rem;
+        }
+    }
+    &__item-copy-top{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 107%;
+        letter-spacing: 0.01em;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 1.7rem;
+        margin-bottom: 1.3rem;
+        @media (max-width: 962px){
+           margin-bottom: 0.5rem;
+        }
+        svg{
+            width: 2rem;
+            height: 2rem; 
+        }
+    }
+    &__item-copy-btn{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 133%;
+        letter-spacing: 0.03em;
+        color: #855344;
+        padding: 1.2rem 0 1rem;
+        border: 0.15rem dashed #855344;
+        border-radius: 0.6rem;
+        width: 100%;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+         }
+        svg{
+            width: 1.2rem;
+            height: 1.4rem;
+        }
+    }
+    &__item-open{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 107%;
+        letter-spacing: 0.01em;
+        color: #777b8d;
+        position: absolute;
+        right: 3rem;
+        bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        @media (max-width: 962px){
+            bottom: 11rem;
+            left: 0;
+            color: #284fd3;
+            font-size: 1.2rem;
+         }
+        svg{
+            width: 0.9rem;
+            height: 0.5rem;
+        }
+    }
+    &__btn-all{
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 107%;
+        letter-spacing: 0.01em;
+        color: #fff;
+        padding: 1.5rem 0 1.2rem;
+        border-radius: 0.6rem;
+        width: 27.7rem;
+        text-align: center;
+        margin: auto;
+        background: #d9113a;
+        margin-bottom: 7rem;
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+         }
+    }
+}
