@@ -4,19 +4,34 @@
         display: flex;
         gap: 1.8rem;
         flex-wrap: wrap;
+        @media (max-width: 962px){
+            width: 100%;
+            gap: 1.1rem;
+            justify-content: space-between;
+        }
     }
     &__item{
         background: #252836;
         border-radius: 0.8rem;
         width: 24.1rem;
+        @media (max-width: 962px){
+            width: 13.65rem;
+        }
         img{
             border-radius: 0.8rem;
             width: 24rem;
             height: 20rem;
+            @media (max-width: 962px){
+                width: 100%;
+                height: 9.6rem;
+            }
         }
     }
     &__content{
         padding: 2.8rem 2.9rem;
+        @media (max-width: 962px){
+           padding: 1rem;
+        }
     }
     &__name{
         font-family: $second-family;
@@ -27,6 +42,10 @@
         color: #fff; 
         height: 5rem;
         margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            font-size: 1.3rem;
+            height: 1.9rem;
+         }
     }
     &__status{
         font-family: $font-family;
@@ -36,6 +55,9 @@
         letter-spacing: 0.01em;
         color: #727383;
         margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            font-size: 1.1rem;
+         }
     }
     &__link{
         font-family: $font-family;
@@ -47,5 +69,391 @@
         padding: 1.8rem 2.5rem 1.4rem;
         background: #2550e3;
         border-radius: 0.8rem;
+        @media (max-width: 962px){
+            padding: 0.7rem;
+            font-size: 1.19rem;
+            white-space: nowrap;
+         }
+    }
+}
+
+.slotmachines .section__filters{
+    @media (max-width: 962px){
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        .section__filter .section__filter-item:nth-child(1){
+            display: none;
+         }
+         .section__filter-item{
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+         }
+        .section__filter-item select{
+            width: 100%;
+            appearance: auto;
+            background: transparent;
+            border: 0.15rem solid #dbdde4;
+            font-size: 1.3rem;
+            padding: 1.3rem;
+         }
+         .section__filter{
+            width: 100%;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+         }
+         .section__filter-all{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 175%;
+            letter-spacing: 0.02em;
+            color: #727688;
+            opacity: 0.5;
+         }
+     }
+}
+
+.slotmachines-one{
+    margin-bottom: 7rem;
+    @media (max-width: 962px){
+        margin-bottom: 1.5rem;
+    }
+    .container{
+        display: flex;
+        border-radius: 0.8rem;
+        background: rgba(239, 240, 244, 0.5);
+        @media (max-width: 962px){
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+            margin: 0 1rem;
+            width: 30rem;
+        }
+    }
+    &__osn{
+        background: #22242e;
+        border-radius: 0.8rem;
+        min-width: 44.1rem;
+        padding: 1.3rem 4.5rem;
+        @media (max-width: 962px){
+            width: 100%;
+            min-width: 100%;
+            padding: 1.5rem 2rem;
+        }
+    }
+    &__osn-img{
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid #828386;
+        margin-bottom: 2.9rem;
+        @media (max-width: 962px){
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        img{
+            height: 11.3rem;
+            @media (max-width: 962px){
+                height: 5.6rem;
+            }
+        }
+    }
+    &__osn-li{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        span:nth-child(1){
+            display: block;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 200%;
+            letter-spacing: 0.01em;
+            color: #aeb0bc;
+            width: 14.5rem;
+            @media (max-width: 962px){
+                width: 9.9rem;
+                font-size: 1.1rem;
+            }
+        }
+        span:nth-child(2){
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 200%;
+            letter-spacing: 0.01em;
+            color: #fff;
+            @media (max-width: 962px){
+                font-size: 1.1rem;
+            }
+        }
+    }
+    &__info{
+        padding: 4.2rem 7rem 5.1rem;
+        @media (max-width: 962px){
+            padding: 2.1rem 1.9rem;
+        }
+    }
+    &__name{
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 3.3rem;
+        line-height: 83%;
+        letter-spacing: 0.01em;
+        color: #252836;  
+        margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+           font-size: 1.5rem;
+           margin-bottom: 1rem;
+        }
+    }
+    &__rating{
+        display: flex;
+        align-items: flex-end;
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 3.6rem;
+        line-height: 83%;
+        letter-spacing: 0.01em;
+        color: #252836;
+        gap: 1rem;
+        margin-bottom: 4.3rem;
+        @media (max-width: 962px){
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+         }
+        svg{
+            width: 7.8rem;
+            height: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+    &__item{
+        display: flex;
+        gap: 3rem;
+        align-items: flex-start;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 0rem;
+         }
+        &.last{
+            margin-bottom: 1.5rem;
+            @media (max-width: 962px){
+                margin-top: 1.5rem;
+             }
+        }
+        span{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 214%;
+            letter-spacing: 0.01em;
+            color: #767987;
+            min-width: 13rem;
+            @media (max-width: 962px){
+                font-size: 1.19rem;
+             }
+        }
+        .list{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 200%;
+            letter-spacing: 0.01em;
+            color: #252836;
+            @media (max-width: 962px){
+                font-size: 1.19rem;
+             }
+        }
+    }
+    &__descr{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 136%;
+        letter-spacing: 0.01em;
+        color: #767987   
+    }
+}
+.reviews{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+.review{
+    border: 1px solid #dbdde4;
+    border-radius: 0.8rem;
+    width: 77rem;
+    padding: 2.7rem 2.5rem;
+    @media (max-width: 962px){
+        width: 100%;
+        padding: 2.1rem;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+        position: relative;
+        @media (max-width: 962px){
+            margin-bottom: 1rem;
+        }
+    }
+    &__left{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        img{
+            width: 3.7rem;
+            height: 3.7rem;
+        }
+    }
+    &__name{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #2550e3; 
+        @media (max-width: 962px){
+            font-size: 1.3rem;
+            margin-top: -3rem;
+            margin-left: -1rem;
+        }
+    }
+    &__date{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 138%;
+        letter-spacing: 0.02em;
+        color: #c3c6d7;
+        margin-bottom: 1rem;
+        @media (max-width: 962px){
+            position: absolute;
+            left: 4.5rem;
+            top: 1rem;
+        }
+    }
+    &__rating{
+        text-align: right;
+        @media (max-width: 962px){
+            position: absolute;
+            left: 4.5rem;
+            top: 2.3rem;
+        }
+        svg{
+            width: 8.1rem;
+            height: 1.2rem;
+        }
+    }
+    &__content{
+        padding: 0 5rem;
+        @media (max-width: 962px){
+            padding: 0;
+        }
+        p{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 127%;
+            letter-spacing: 0.01em;
+            color: #727688;
+            margin-bottom: 1rem;
+            @media (max-width: 962px){
+                padding: 0;
+                font-size: 1.1rem;
+            }
+        }
+    }
+    &__subtitle{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #252836;
+        margin-bottom: 1.9rem;
+        @media (max-width: 962px){
+            margin-bottom: 1rem;
+        }
+    }
+    &__bottom{
+        margin-top: 3rem;
+        padding: 0 5rem;
+        display: flex;
+        gap: 4.5rem;
+        align-items: center;
+        @media (max-width: 962px){
+            padding: 0;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+    }
+    &__button{
+        padding: 1.1rem 2.1rem;
+        background: rgba(225, 228, 238, 0.5);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #2550e3;
+        border-radius: 0.8rem;
+        @media (max-width: 962px){
+           width: 100%;
+        }
+    }
+    &__all{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #2550e3;
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        svg{
+            width: 0.9rem;
+        }
+    }
+    &__answer{
+        padding: 0 5rem;
+        margin-top: 3rem;
+        @media (max-width: 962px){
+            padding: 0;
+        }
+        .review__content{
+            padding: 0;
+        }
+        .review__top{
+            align-items: center;
+        }
+    }
+}
+
+.mobile-none{
+    display: none;
+}
+
+.aside__rating-title{
+    @media (max-width: 962px){
+        white-space: nowrap;
+        font-size: 1.8rem;
+        svg{
+            display: none;
+        }
+    }
+}
+
+.section-title{
+    @media (max-width: 962px){
+        margin-bottom: 1rem;
     }
 }
